@@ -25,6 +25,9 @@ SECRET_KEY = 'django-insecure-2lq2&57$*go81)kn(r%a23v1(1($m2i#&-%)a22%%@cm&1$q(-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 # entrar com o dominio se debug estiver False
+# Quando estiver false o sevidor vai procurar a função index no arquivo views.py de cada app que aponta para os arquivos .html
+# ['*'] permite qualquer endereço web a acessar a aplicação
+
 ALLOWED_HOSTS = []
 
 
