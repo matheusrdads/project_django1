@@ -23,3 +23,11 @@ def contato(request):
 
 def pedido(request):
     return render(request, 'pedido.html')
+
+
+def produto(request, pk):
+    prod = Produto.objects.get(id=pk)
+    context = {
+        'produto' : prod
+    }
+    return render(request, 'produto.html', context)
